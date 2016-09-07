@@ -22,11 +22,10 @@ public class SortedSetDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TreeSet t=new TreeSet();
-		t.add(null);
 		t.add(5);
 		t.add(1);
 		t.add(2);
-		//if we add null once again it will raise error
+		t.add(null);//Null pointer exception if non empty tree set
 		
 		HashSet s=new HashSet();
 		s.add(10);
